@@ -1,0 +1,279 @@
+body {
+	background-image: url("./img/spacebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #fff;
+	font-family: Arial, sans-serif;
+
+
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+
+header img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 46px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+
+p {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #000000a9;
+	color: white;
+	padding: 16px 32px;
+	font-size: 34px;
+	height: 50px;
+	text-align: center;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+	background-color: #ff6600;
+	color: #fff;
+}
+
+form {
+	background-color: #000000a4;
+	padding: 40px;
+	border-radius: 20px;
+	max-width: 600px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+    color: white;
+}
+
+.bg{
+    background-color: #1c1c1ca9;
+    text-align: center;
+    align-items: center;
+    
+}
+
+label {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+    color: white;
+    width: auto;
+}
+
+input[type="text"], input[type="email"], input[type="message"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ccc;
+
+}
+
+input[type="submit"] {
+	background-color: #ff6600;
+	color: #fff;
+	padding: 16px 32px;
+	font-size: 24px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+	display: block;
+	margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+	background-color: #e65c00;
+}
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+	font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+
+	h1 {
+		font-size: 28px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	.button {
+		padding: 12px 24px;
+		font-size: 20px;
+        
+	}
+    
+
+	form {
+		padding: 20px;
+		max-width: 400px;
+	}
+
+	input[type="submit"] {
+		padding: 12px 24px;
+		font-size: 20px;
+	}
+
+	
+}
+
+
+.all{
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    0%   { opacity: 0;}
+    100% {opacity: 1; }
+}
+
+.maintext{
+	text-align: center;
+	align-items: center;
+	display: block;
+	margin: 0 auto;
+    background-color: #000000c2;
+	border-radius: 40px;
+}
+
+.moon{
+	position: relative;
+}
+
+.rope{
+	width: 70px;
+    position: absolute;
+	top: 2.7rem;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: center top;
+    animation:swing 3s infinite ease-in-out;
+    transform-origin:top;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-3deg)}
+    50%{-moz-transform:rotate(3deg)}
+    100%{-moz-transform:rotate(-3deg)}
+}
+@keyframes swing{
+    0%{-webkit-transform:rotate(-3deg)}
+    50%{-webkit-transform:rotate(3deg)}
+    100%{-webkit-transform:rotate(-3deg)}
+}
+
+.astronaut{
+	position: relative;
+}
+
+
+.game{
+	text-align: center;
+	align-items: center;
+	display: block;
+	margin: 0 auto;
+    background-color: #000000c2;
+	border-radius: 20px;
+
+}
+
+#hearts {
+	text-align: center;
+	margin-bottom: 10px;
+}
+  
+.heart {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border-radius: 50%;
+}
+
+.heartimg{
+	width: 30px;
+}
+
+#result {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+input[type="number"] {
+	display: block;
+	width: 10%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ccc;
+	margin: 0 auto;
+}
+
+.guess{
+	margin-top: 0.5rem;
+	display: inline-block;
+	background-color: #ff0000a9;
+	color: white;
+	padding: 5px 32px;
+	font-size: 24px;
+	border-radius: 10px;
+	text-decoration: none;
+	border: 0;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.guess:hover {
+	background-color: #ff6600;
+	color: #fff;
+}
+
+.reset{
+	border: 0;
+	margin-top: 0rem;
+	display: inline-block;
+	background-color: #ff0000a9;
+	color: white;
+	padding: 5px 32px;
+	font-size: 24px;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+}
+.reset:hover{
+	background-color: #ff6600;
+	color: #fff;
+}
